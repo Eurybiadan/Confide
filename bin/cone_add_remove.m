@@ -285,7 +285,7 @@ function [ coordout ] = cone_add_remove(im,coords, outputtype)
             xcoords = [];
             ycoords = [];
             refreshdata(plot_hand,'caller');
-        elseif strcmp(get(gcf,'CurrentCharacter'),'v') %
+        elseif strcmp(get(gcf,'CurrentCharacter'),'l') %
             
             % Save contrast adjustment
             temImg = getimage(gcf);
@@ -298,7 +298,7 @@ function [ coordout ] = cone_add_remove(im,coords, outputtype)
             linlog = ~linlog;
             if linlog
                 im_hand_api.replaceImage(linImgs{zoomlevel});
-                disp('Now viewing with a linear scale');
+                %disp('Now viewing with a linear scale');
             else
                 if isempty(logImgs{zoomlevel})
                     % get log img, convert back to uint8, offset by 1 to avoid 0's
@@ -306,7 +306,7 @@ function [ coordout ] = cone_add_remove(im,coords, outputtype)
                     logImgs{zoomlevel} = uint8(255*(mat2gray(log(double(img)+1))));
                 end
                 im_hand_api.replaceImage(logImgs{zoomlevel});
-                disp('Now viewing with a log scale');
+                %disp('Now viewing with a log scale');
             end
         end
     end

@@ -11,9 +11,6 @@
 % this program's subdirectory. Note that you MUST update the LUT.csv in the format: ID,axial,pix/degree, or it 
 % will SKIP the images that it can't find an ID lookup for!
 %
-% By default it attempts to analyze a 55, 40 and 25 micron box. Therefore, the input boxes must be at
-% LEAST 60 microns for proper operation. The results of running the program
-% with any sizes smaller than that are undefined!
 % To change the micron size that is analyzed, simply change the sizes array below.
 
 close all;
