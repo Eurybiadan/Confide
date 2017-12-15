@@ -43,9 +43,9 @@ There is a progress bar provided that will show how many images remain.
 **Once the software has completed, the coordinate areas will be cropped based on the input values from line 25 of cone_counting, and basic analyses (Density, NND, etc) will be run on the coordinate files, and output to the coordinate_analysis folder.**
 
 **The coordinate analysis folder will contain:**
-**- Cone_Counting_Batch_Random_density_info.csv** 
+- **Cone_Counting_Batch_Random_density_info.csv** 
   - This file contains a summary of all files run in the software. It also contains the density as calculated over the entire image.
-**- coordinate_analysis_coordstats_XXum_box.csv**
+- **coordinate_analysis_coordstats_XXum_box.csv**
   - XX will be the micron sizes that are in the “sizes” vector on line 26 of cone_counting.m
 -This file contains the filename, number of cells, density within the filename’s micron region, mean NND, cropped region in microns, mean Voronoi area, number of “bounded” Voronoi cells, and the total “bounded” Voronoi area.
   - The coordinates of each file run through the software
