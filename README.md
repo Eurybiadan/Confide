@@ -17,11 +17,16 @@ The scaling file (LUT.csv) consists of three columns: An “ID” column, which 
 **An example of a GOOD image filename: RC_0009_pictures_of_stuff.tif**
 
 An example of a BAD image filename: RC_0009pictures_of_stuff.tif
+
 An example of a BAD image filename: pictures_of_stuff_ RC_0009.tif
+
 An example of a BAD image filename: RC0009pictures_of_stuff.tif
 
 An example table row for LUT.csv:
-RC_0009 | 24 | 600
+
+| ID | Axial Length | Pixels per degree |
+| --- | --- | --- |
+| RC_0009 | 24 | 600 |
 
 An example LUT.csv is provided for you within the “etc” folder.
 
